@@ -1,0 +1,7 @@
+#bintraybintray-metalnx-rpm - packages by metalnx from Bintray
+[bintraybintray-metalnx-rpm]
+name=bintray-metalnx-rpm
+baseurl=https://dl.bintray.com/metalnx/rpm
+gpgcheck=0
+repo_gpgcheck=0
+enabled=1

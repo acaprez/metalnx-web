@@ -18,8 +18,9 @@
 FROM centos:centos7
 MAINTAINER Arthur Guerra <arthur.guerra@emc.com>
 
+ADD ./bintray-metalnx-rpm.repo /etc/yum.repos.d/
 RUN yum -y update \
-	&& yum -y install sudo epel-release
+	&& yum -y install sudo epel-release emc-metalnx-webapp
 
 # Temporary fix for EMC network firewall
 RUN sed -i "s|mirrorlist|#mirrorlist|" /etc/yum.repos.d/epel.repo \
@@ -34,7 +35,8 @@ RUN sed -i "s|mirrorlist|#mirrorlist|" /etc/yum.repos.d/epel.repo \
 		tomcat \
 		tomcat-servlet-3.0-api \
 		java-1.8.0-openjdk-devel \
-		wget 
+		wget \
+                apr
 
 ADD ./postgresql-setup /usr/bin/postgresql-setup
 ADD ./supervisord.conf /etc/supervisord.conf
@@ -52,7 +54,7 @@ RUN chown -v postgres.postgres /var/lib/pgsql/data/postgresql.conf \
 	&& sed -i "s|ident|trust|g" /var/lib/pgsql/data/pg_hba.conf 
 
 RUN mkdir /usr/share/tomcat/webapps/emc-metalnx-web
-ADD ./emc-metalnx-web.war /usr/share/tomcat/webapps/emc-metalnx-web/emc-metalnx-web.war
+RUN cp /tmp/emc-tmp/emc-metalnx-web.war /usr/share/tomcat/webapps/emc-metalnx-web/emc-metalnx-web.war
 
 RUN cd /usr/share/tomcat/webapps/emc-metalnx-web; jar xvf emc-metalnx-web.war; rm -f emc-metalnx-web.war \
 	&& cd /usr/share/tomcat/webapps/emc-metalnx-web/WEB-INF/classes/; rm database.properties; mv postgresql.properties database.properties \
@@ -60,6 +62,7 @@ RUN cd /usr/share/tomcat/webapps/emc-metalnx-web; jar xvf emc-metalnx-web.war; r
 	&& sed -i "s|db.username=.*|db.username=metalnx|" /usr/share/tomcat/webapps/emc-metalnx-web/WEB-INF/classes/database.properties \
 	&& sed -i "s|db.password=.*|db.password=metalnx|" /usr/share/tomcat/webapps/emc-metalnx-web/WEB-INF/classes/database.properties \
 	&& sed -i "s|encoded.properties=.*|encoded.properties=|" /usr/share/tomcat/webapps/emc-metalnx-web/WEB-INF/classes/security.properties
+
 
 EXPOSE 8080
 
