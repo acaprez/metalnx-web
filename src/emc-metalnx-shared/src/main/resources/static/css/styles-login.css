@@ -2,14 +2,14 @@ body{
     height: 100vh;
     margin:0;
     overflow: hidden;
-    background: #2c95dd ; /* Old browsers */
-    background: -moz-linear-gradient(-45deg,  #ffffff  0%, #2c95dd 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#ffffff ), color-stop(100%,#2c95dd)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(-45deg,  #ffffff  0%,#2c95dd 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(-45deg,  #ffffff  0%,#2c95dd 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(-45deg,  #ffffff  0%,#2c95dd 100%); /* IE10+ */
-    background: linear-gradient(135deg,  #ffffff  0%,#2c95dd 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff ', endColorstr='#2c95dd',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background: #fefdfa ; /* Old browsers */
+//    background: -moz-linear-gradient(-45deg,  #ffffff  0%, #2c95dd 100%); /* FF3.6+ */
+//    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#ffffff ), color-stop(100%,#2c95dd)); /* Chrome,Safari4+ */
+//    background: -webkit-linear-gradient(-45deg,  #ffffff  0%,#2c95dd 100%); /* Chrome10+,Safari5.1+ */
+//    background: -o-linear-gradient(-45deg,  #ffffff  0%,#2c95dd 100%); /* Opera 11.10+ */
+//    background: -ms-linear-gradient(-45deg,  #ffffff  0%,#2c95dd 100%); /* IE10+ */
+//    background: linear-gradient(135deg,  #ffffff  0%,#2c95dd 100%); /* W3C */
+//    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff ', endColorstr='#2c95dd',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     ::-webkit-input-placeholder {
         color: #4E546D
     }
@@ -19,6 +19,7 @@ p{
     color: #5B5E6F;
     font-size:10px;
     text-align:left;
+    font-family: 'Mercury SSm A','Mercury SSm B', Arial, sans-serif;
 }
 
 .login{
@@ -32,23 +33,24 @@ p{
     transform:rotateX(0deg);
     position:relative;
     width:360px;
-    border-top: 2px solid #2c95dd;
+    border: 3px solid #d00000;
     height:450px;
     position:absolute;
     left:0;
     right:0;
     margin:auto;
+    margin-top: 75px;
     top:0;
     bottom:0;
-    padding:100px 40px 40px 40px;
-    background: #35394a; /* Old browsers */
-    background: -moz-linear-gradient(45deg,  #35394a 0%, #1f222e 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#35394a), color-stop(100%,#1f222e)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(45deg,  #35394a 0%,#1f222e 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(45deg,  #35394a 0%,#1f222e 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(45deg,  #35394a 0%,#1f222e 100%); /* IE10+ */
-    background: linear-gradient(45deg,  #35394a 0%,#1f222e 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#35394a', endColorstr='#1f222e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    padding:20px 40px 40px 40px;
+    background: #f5f1e7; /* Old browsers */
+//    background: -moz-linear-gradient(45deg,  #35394a 0%, #1f222e 100%); /* FF3.6+ */
+//    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#35394a), color-stop(100%,#1f222e)); /* Chrome,Safari4+ */
+//    background: -webkit-linear-gradient(45deg,  #35394a 0%,#1f222e 100%); /* Chrome10+,Safari5.1+ */
+//    background: -o-linear-gradient(45deg,  #35394a 0%,#1f222e 100%); /* Opera 11.10+ */
+//    background: -ms-linear-gradient(45deg,  #35394a 0%,#1f222e 100%); /* IE10+ */
+//    background: linear-gradient(45deg,  #35394a 0%,#1f222e 100%); /* W3C */
+//    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#35394a', endColorstr='#1f222e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 .login_title {
@@ -66,7 +68,7 @@ p{
 }
 
 input[type='password'] {
-    color:#2c95dd !important;
+//    color:#2c95dd !important;
 }
 
 input[type="submit"] {
@@ -75,7 +77,7 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     color:white;
-    background:#2c95dd ;
+    background:#d00000 ;
     cursor:pointer;
     transition-property:background,color;
     transition-duration:.2s;
@@ -87,15 +89,15 @@ input[type="submit"]:focus{
 }
 
 input[type='text'],input[type='password']{
-    color: #2c95dd;
+//    color: #2c95dd;
     width: 100%;
     margin-top:-2px;
-    background: rgb(50, 54, 74);
+    background: #FEFDFA;
     left: 0;
     right: 0;
     padding: 10px 40px;
-    border-top: 2px solid rgb(57, 61, 82);
-    border-bottom: 2px solid rgb(57, 61, 82);
+    border-top: 2px solid #d00000;
+    border-bottom: 2px solid #d00000;
     border-right: none;
     border-left: none;
     outline: none;
@@ -127,14 +129,14 @@ input{
     background:transparent;
     font-family: verdana, sans-serif;
     padding:10px 50px;
-    border:2px solid #2c95dd ;
-    color: #ffffff ;
+    border:2px solid #d00000 ;
+    color: #545350 ;
     transition-property:background,color;
     transition-duration:.2s;
 }
 
 .login_msgs {
-    bottom: 40px;
+    bottom: 85px;
     color: #c0605e;
 }
 
@@ -175,7 +177,9 @@ input{
  }
 
 img {
-    width: 85%;
+    width: 65%;
+    display: block;
+    margin: auto;
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -203,3 +207,28 @@ img {
 #login-link {
     margin-left: 99px;
 }
+
+.login_welcome {
+  text-align: center;
+  margin-top: 0px;
+  color: #545450;
+  font-family: 'Tungsten A','Tungsten B',Arial,sans-serif;
+  font-size: 30px;
+}
+
+.login_h2 {
+  color: #545350;
+  font-family: 'Tungsten A','Tungsten B',Arial,sans-serif;
+  margin-top: 0px;
+  text-align: center;
+  font-size: 48px;
+}
+
+.login_footer {
+  position: absolute;
+  display: block;
+  top: 450px;
+  margin-top: 20px;
+}
+
+

@@ -36,6 +36,9 @@
 <script src="../static/js/jquery-1.11.0.js"
     th:src="@{/js/jquery.min.js}"></script>
 
+<!-- UNL Fonts  -->
+<link href="//cloud.typography.com/7717652/616662/css/fonts.css" type="text/css" rel="stylesheet" />
+
 <!-- Bootstrap Core CSS -->
 <link href="../static/css/bootstrap.min.css" rel="stylesheet"
 	th:href="@{/css/bootstrap.min.css}" />
@@ -91,12 +94,13 @@
 				</button>
 
 				<!-- EMC metalnx logo -->
-				<a class="navbar-brand" th:href="@{ ${urlMap.URL_COLLECTIONS_MANAGEMENT} }">
-					<img  alt="EMC logo" src="../static/images/logo.svg" 
-                		th:src="@{/images/logo.svg}" />
-					<img class="hidden" alt="EMC logo" src="../static/images/logo.svg"
-						  th:src="@{/images/logo.svg}" />
+				<a class="navbar-icon pull-left" th:href="@{ ${urlMap.URL_COLLECTIONS_MANAGEMENT} }">
+					<img  alt="Nebraska logo" src="../static/images/Nebraska_N.png" 
+                		th:src="@{/images/Nebraska_N.png}" />
+					<img class="hidden" alt="Nebraska logo" src="../static/images/Nebraska_N.png"
+						  th:src="@{/images/Nebraska_N.png}" />
 				</a>
+				<a class="navbar-brand" th:href="@{ ${urlMap.URL_COLLECTIONS_MANAGEMENT} }">CB3 iRODS</a>
 				<!-- EMC metalnx logo - end -->
 
 				<!-- Topbar links -->

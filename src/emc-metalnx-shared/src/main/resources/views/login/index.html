@@ -32,7 +32,10 @@
 	    
 	    <!-- jQuery Version 1.11.0 -->
 	    <script src="../static/js/jquery-1.11.0.js" th:src="@{/js/jquery.min.js}"></script>
-	    
+
+            <!-- UNL Fonts  -->
+            <link href="//cloud.typography.com/7717652/616662/css/fonts.css" type="text/css" rel="stylesheet" />	    
+
 	    <!-- Bootstrap Validator CSS -->
 	    <link href="../static/css/bootstrapValidator.min.css" rel="stylesheet"
 	    	th:href="@{/css/bootstrapValidator.min.css}"/>
@@ -47,7 +50,10 @@
 	<body>
         <div class="login">
             <div class="login_title">
-                <img alt="EMC logo" th:src="@{/images/logo-blue.svg}" />
+              <div class="login_welcome" >Welcome to the
+              </div>
+                <h2 class="login_h2">CB3 Data Portal</h2>
+                <img alt="NU logo" th:src="@{/images/R-UNL.RGB.png}" />
             </div>
             <div class="login_fields">
                 <form action="#" th:action="@{/login/authenticate/}" method="POST" id="authLogin">
@@ -96,8 +102,17 @@
             </div>
 
             <div class="login_copyright">
-                <span>&copy; 2015-2017 DELL EMC All rights reserved.</span>
+                <span>&copy; <a href="https://github.com/Metalnx">Metalnx</a> 2015-2017 DELL EMC All rights reserved.</span>
             </div>
+
+            <div class="login_footer" >
+             <b>Center for Brain, Biology and Behavior</b><br/>
+             C89 East Stadium<br/>
+             University of Nebraska-Lincoln<br/>
+             Lincoln, NE 68588-0156 <br/>
+             </div>
+
+
         </div>
 	</body>
     
