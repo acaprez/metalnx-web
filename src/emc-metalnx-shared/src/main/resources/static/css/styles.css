@@ -2360,3 +2360,7 @@ h4 {
 h5 {
   font-size: 18px;
 }
+
+.pagination>li>a {
+  color: #d00000;
+}
