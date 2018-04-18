@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+<key>Protocol</key>
+<string>irods</string>
+<key>Vendor</key>
+<string>CB3-iRODS</string>
+<key>Description</key>
+<string>CB3-test iRODS Cyberduck profile</string>
+<key>Hostname Configurable</key>
+<false/>
+<key>Port Configurable</key>
+<false/>
+<key>Default Hostname</key>
+<string>hcc-anvil-175-31.unl.edu</string>
+<key>Region</key>
+<string>HCCtest</string>
+<key>Default Port</key>
+<string>1247</string>
+<key>Username Placeholder</key>
+<string>Username</string>
+<key>Password Placeholder</key>
+<string>Password</string>
+<key>Authorization</key>
+<string>PAM</string>
+</dict>
+</plist>
