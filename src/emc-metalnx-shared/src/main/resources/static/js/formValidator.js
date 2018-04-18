@@ -507,16 +507,17 @@ function validatePassword(){
 	var password = $.trim($("#inputPassword").val());				
 	
 	if(password == ""){
-		$("#inputPassword").parent().addClass("has-feedback has-error");
+	/*	$("#inputPassword").parent().addClass("has-feedback has-error");
 		
 		$("#invalidPasswordMsg").hide();
 		$("#invalidPasswordIcon").show(); 	
 		$("#emptyPasswordMsg").show();		
 		return false;				
-								
+	*/
+		return true;
 	}
 	//password length less than 5 characters
-	else if(password.length < 5) {
+	else if(  password.length > 0 && password.length < 5) {
 		$("#inputPassword").parent().addClass("has-feedback has-error");
 		
 		$("#invalidPasswordMsg").show();
@@ -543,13 +544,15 @@ function validatePasswordConf() {
 	var password = $.trim($("#inputPassword").val());
 	
 	if(passwordConf == ""){
-		$("#inputPasswordConfirmation").parent().addClass("has-feedback has-error");
+	/*	$("#inputPasswordConfirmation").parent().addClass("has-feedback has-error");
 
 		$("#invalidPasswordConfIcon").show(); 
 			
 		$("#emptyPasswordConfMsg").show();			
 		$("#notMatchPasswordMsg").hide();		
 		return false;				
+	*/
+		return true;
 								
 	}
 	//password confirmation does not match password
@@ -563,7 +566,7 @@ function validatePasswordConf() {
 		return false;					
 	}
 	//password length less than 5 characters
-	else if(passwordConf.length < 5) {
+	else if(passwordConf.length > 0 && passwordConf.length < 5) {
 		$("#inputPasswordConfirmation").parent().addClass("has-feedback has-error");
 
 		$("#invalidPasswordConfIcon").show(); 	
@@ -605,7 +608,7 @@ function validateEmail() {
 		$("#invalidEmailIcon").hide(); 	
 		$("#invalidEmailMsg").hide();				
 	}
-	return true;					
+	return true;
 }
 
 /*

@@ -96,7 +96,9 @@ public class UserServiceImpl implements UserService {
         userDao.save(user);
 
         // Setting password
-        userAO.changeAUserPasswordByAnAdmin(user.getUsername(), password);
+        if (password != null && !password.isEmpty()) {
+                userAO.changeAUserPasswordByAnAdmin(user.getUsername(), password);
+        }
 
         return true;
 
