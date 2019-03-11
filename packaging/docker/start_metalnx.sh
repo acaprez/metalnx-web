@@ -66,6 +66,7 @@ __setup_irods() {
 	sed -ir "s|jobs.irods.username=.*$|jobs.irods.username=$IRODS_USER|" $env_file
 	sed -ir "s|jobs.irods.password=.*$|jobs.irods.password=$IRODS_PASS|" $env_file
 	sed -ir "s|irods.auth.scheme=STANDARD|irods.auth.scheme=PAM|" $env_file
+        sed -ir "s|jobs.irods.auth.scheme=PAM|jobs.irods.auth.scheme=STANDARD|" $env_file
 }
 
 __run_supervisor() {
