@@ -2,10 +2,11 @@ body{
     height: 100vh;
     margin:0;
     overflow: hidden;
-    background-color: #51514c;
+    background-color: #fefdfa;
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff ', endColorstr='#7f7f7f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     ::-webkit-input-placeholder {
         color: #4E546D
+    font-family: 'Mercury SSm A','Mercury SSm B',Arial,sans-serif !important ;
     }
 }
 
@@ -203,23 +204,24 @@ img {
 }
 
 .login-form legend {
-    font-family: 'Lato', Helvetica, sans-serif;
+    font-family: 'Tungsten A','Tungsten B',Arial,sans-serif;
     font-size: 36px;
     font-weight: 300;
     color: #333333;
     margin-top: 5px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     padding-bottom: 25px;
 }
 
 .login-form .footer {
     margin-top: 20px;
+    font-family: 'Mercury SSm A','Mercury SSm B',Arial,sans-serif;
 }
 
 .login-form label {
     /*font-family: 'Lato', Helvetica, sans-serif;*/
-    font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
+    font-family: 'Mercury SSm A','Mercury SSm B',Arial,sans-serif;
+    font-size: 18px;
     color: #333333;
     font-weight: 300;
     display: block;
@@ -243,15 +245,15 @@ img {
     -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
     position: absolute;
-    top: 50%;
+    top: 50px;
     left: 50%;
     display: block;
-    margin-top: -185px;
+    margin-top: 0px;
     margin-left: -235px;
-    padding: 25px;
+    padding: 20px;
     width: 520px;
-    height: 500px;
-    background: white;
+    height: 650px;
+    background: #f5f1e7;
     text-align: center;
 }
 
@@ -290,4 +292,18 @@ input, textarea, .uneditable-input {
 
 input[type="button"], input[type="radio"], input[type="checkbox"] {
     width: auto;
+}
+
+#unllogo {
+    width: 40%;
+}
+
+#loginBtn {
+    margin-bottom: 10px;
+    background-color: #137CBD;
+    border-color: #137CBD;
+}
+
+a {
+    color: #d00000;
 }

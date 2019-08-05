@@ -37,6 +37,8 @@
 	th:src="@{/js/bootstrapValidator.min.js}"></script>
 
 <link rel="stylesheet" th:href="@{/css/styles-login.css}" />
+<!-- UNL Fonts  -->
+<link href="//cloud.typography.com/7717652/616662/css/fonts.css" type="text/css" rel="stylesheet" />
 </head>
 
 <body>
@@ -44,7 +46,8 @@
 		<form action="#" th:action="@{/login/authenticate/}" method="POST"
 			id="authLogin" class="form login-form">
 			<legend>
-				sign in to <span class="blue" th:text="#{login.title}"></span>
+				Welcome to the CB3 Data Portal<br/>
+                                <img id="unllogo" alt="NU logo" th:src="@{/images/R-UNL.RGB.png}" />
 			</legend>
 			<div class="form-group">
 				<label for="inputUsernameLogin" th:text="#{login.username}">Username</label>
@@ -74,6 +77,17 @@
 				</label>-->
 				<button type="submit" value="Login" id="loginBtn"
 					class="btn btn-success">Login</button>
+
+                                 <p><a href="https://hcc.unl.edu/docs/guides/handling_data/connect_to_cb3_irods/#how-to-connect-using-cyberduck" target="_blank">Click for instructions to connect using Cyberduck</a>
+                                 <br/>
+                                 <a th:href="@{/images/CB3.cyberduckprofile}" download="CB3.cyberduckprofile">(Click to download the Cyberduck profile directly)</a>
+                                 </p>
+                                 <br/>
+                                 <a href="http://cb3.unl.edu" target="_blank"><b>Center for Brain, Biology and Behavior</b></a><br/>
+                                 C89 East Stadium<br/>
+                                 University of Nebraska-Lincoln<br/>
+                                 Lincoln, NE 68588-0156 <br/>
+
 
 				<th:block th:if="${globalConfig.isTicketsEnabled()}">
 					<a id="haveTicketBtn" href="#" onclick="showAnonymousLogin();"
