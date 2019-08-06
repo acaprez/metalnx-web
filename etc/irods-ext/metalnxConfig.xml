@@ -19,9 +19,9 @@
 				<property name="fileEncodings" value="UTF-8" />
 				<property name="basenames">
 					<list>
-				    	<value>classpath:i18n/messages</value>
-				    	<value>classpath:i18n-users/messages</value>
-				    </list>
+                                        <value>classpath:i18n/messages</value>
+                                        <value>classpath:i18n-users/messages</value>
+				</list>
 				</property>
 			</bean>
 
@@ -29,11 +29,10 @@
 			<!-- SPRING ANNOTATION PROCESSING -->
 			<!-- **************************************************************** -->
 			<mvc:annotation-driven />
-			<mvc:resources mapping="/images/**" location="/images/,classpath:static/images/" />
-			<mvc:resources mapping="/fonts/**" location="/fonts/,classpath:static/fonts/" />
-			<mvc:resources mapping="/css/**" location="/css/,classpath:static/css/" />
-			<mvc:resources mapping="/js/**" location="/js/,classpath:static/js/" />
-			<mvc:resources mapping="/plugins/**" location="/plugins/,classpath:static/plugins/" />
+			<mvc:resources mapping="/images/**" location="file:/etc/irods-ext/images,/images/,classpath:static/images/" />
+			<mvc:resources mapping="/fonts/**" location="file:/etc/irods-ext/fonts,/fonts/,classpath:static/fonts/" />
+			<mvc:resources mapping="/css/**" location="file:/etc/irods-ext/css/,/css/,classpath:static/css/" />
+			<mvc:resources mapping="/js/**" location="file:/etc/irods-ext/js/,/js/,classpath:static/js/" />
 
 
 </beans>
