@@ -1,0 +1,66 @@
+@import url("//cloud.typography.com/7717652/616662/css/fonts.css");
+
+body {
+  font-family: 'Mercury SSm A','Mercury SSm B',Arial,sans-serif;
+}
+
+.datacommons_title {
+  background-color: #d00000;
+}
+
+.sidebar {
+  background-color: #f6f6f5;
+}
+
+#page-wrapper, #page-wrapper-tickets {
+  background-color: #fefdfa;
+
+}
+
+#page-nav-wrapper {
+  background-color: #fefdfa;
+
+}
+
+/*https://css-tricks.com/replace-the-image-in-an-img-with-css/ */
+#headerContentIcon img {
+  background-image: url("/metalnx/css/unl.svg");
+  background-repeat: no-repeat;
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 40px;
+  width: 194px;
+  padding-left: 194px;
+  margin-left: 20px;
+}
+
+.datacommons_title-mid:after {
+  content: "CB3 iRODS";
+  display: inline;
+  font-size: 30px;
+  font-family: 'Tungsten A','Tungsten B', Arial, sans-serif;
+}
+
+#hdr-junctiontitle {
+  background:none;
+  bottom:9px;
+  font-family:"Open Sans", sans-serif;
+  font-size:35px;
+  font-weight:300;
+  left:14px;
+  margin:0;
+  padding:0;
+  position:absolute;
+  text-decoration:none;
+  width:100%;
+}
+
+#hdr-junctiontitle a {
+  color: white;
+  display:block;
+  margin:0;
+  padding:0;
+  text-decoration:none;
+  width:350px;
+}
