@@ -129,10 +129,10 @@ input[type='text'],input[type='password']{
 }
 
 .login_msgs, .login_copyright {
-    position: absolute;
+//    position: absolute;
     left: 0;
     right: 0;
-    padding: 10px 40px;
+//    padding: 10px 40px;
 }
 
 .login_copyright {
@@ -210,7 +210,7 @@ img {
     color: #333333;
     margin-top: 5px;
     margin-bottom: 10px;
-    padding-bottom: 25px;
+    padding-bottom: 15px;
 }
 
 .login-form .footer {
@@ -245,7 +245,7 @@ img {
     -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
     position: absolute;
-    top: 50px;
+    top: 5px;
     left: 50%;
     display: block;
     margin-top: 0px;
@@ -306,4 +306,8 @@ input[type="button"], input[type="radio"], input[type="checkbox"] {
 
 a {
     color: #d00000;
+}
+
+#pwInput {
+    margin-bottom: 0px;
 }
