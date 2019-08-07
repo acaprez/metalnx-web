@@ -1,7 +1,7 @@
 body{
     height: 100vh;
     margin:0;
-    overflow: hidden;
+//    overflow: hidden;
     background-color: #fefdfa;
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff ', endColorstr='#7f7f7f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     ::-webkit-input-placeholder {
