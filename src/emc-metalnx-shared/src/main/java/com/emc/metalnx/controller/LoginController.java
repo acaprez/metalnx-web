@@ -134,9 +134,16 @@ public class LoginController {
 	@RequestMapping(value = "/exception", method = RequestMethod.GET)
 	public ModelAndView loginErrorHandler(final Exception e) {
 		logger.info("LoginContoller loginErrorHandler()");
-		ModelAndView model = new ModelAndView("login/index");
-		model.addObject("usernameOrPasswordInvalid", true);
-		addAuthTypesAndDefaultAuthToModel(model);
+		ModelAndView model = null;
+		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+
+		if (auth instanceof UsernamePasswordAuthenticationToken) {
+			model = new ModelAndView("redirect:/login/");
+		} else {
+			model = new ModelAndView("login/index");
+			model.addObject("usernameOrPasswordInvalid", true);
+			addAuthTypesAndDefaultAuthToModel(model);
+		}
 
 		return model;
 	}
