@@ -15,7 +15,7 @@
 <key>Default Hostname</key>
 <string>cb3-irodsmain.unl.edu</string>
 <key>Region</key>
-<string>HCCtest</string>
+<string>CB3</string>
 <key>Default Port</key>
 <string>1247</string>
 <key>Username Placeholder</key>
